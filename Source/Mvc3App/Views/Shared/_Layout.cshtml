@@ -1,0 +1,124 @@
+﻿@using Mvc3App.Framework
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <link href="@Url.Content("~/Content/themes/redmond/jquery-ui-1.8.14.custom.css")" rel="stylesheet" type="text/css"/>
+    <link href="@Url.Content("~/Content/jquery.jqGrid/ui.jqgrid.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/jquery.jqGrid/ui.jqgrid.css")" rel="stylesheet" type="text/css" />
+    <script src="@Url.Content("~/Scripts/jquery/jquery-v1.7.1.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.ui/jquery-ui-1.8.17.custom.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery_utils/jquery.feedback.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery_utils/jquery.ui.collapsible.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jqgrid/jquery.jqGrid.src.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/Layout/jquery.layout-v1.3.0.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/Views/Shared/Site.Master.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jqgrid/grid.i18n/grid.locale-en.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jqgrid/jquery.jqGrid.src.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/json/json.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery-ajax/jquery.unobtrusive-ajax.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery-plugins/jquery.dirtyforms.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery-plugins/self/jquery.animateMenu.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery-plugins/self/jquery.makeTextRed.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery-plugins/self/jquery.reverseText.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery-plugins/self/jquery.simpleSlideShow.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery-plugins/self/jquery.helloWold.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery-validate/jquery.unobtrusive-ajax.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery-validate/jquery.validate.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery-validate/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+    @RenderSection("HeadContentPlaceHolder", false)
+</head>
+<body id="outer-layout">
+    <div class="ui-layout-north">
+        <div class="page-header">
+            <img class="chk-logo" alt="CHK" src="/Content/Images/OSU3.JPG" width="35px" height="28px" />
+            <div class="title">
+                Code Challenge 2012</div>
+        </div>
+    </div>
+    <div id="menuW" class="ui-layout-west" style="display: none;">
+        <div class="ui-layout-content">
+            @Html.Partial("MainMenu")
+        </div>
+    </div>
+    <div id="inner-layout" class="ui-layout-center" style="margin-left: 107px;">
+        <div class="ui-layout-center" id="main">
+            <div class="header header-content">
+                @RenderSection("MainHeaderContentPlaceHolder", true)
+            </div>
+            <div>
+                @RenderBody()
+            </div>
+        </div>
+        <div class="ui-layout-north">
+            <ul id="validationErrors" class="message-list" style="display: none">
+                <li class="ui-state-error">Please correct the following validation errors:<ul id="validationLabels">
+                </ul>
+                </li>
+            </ul>
+            <ul id="feedback" class="message-list">
+            </ul>
+        </div>
+    </div>
+    <div id="footnote" class="ui-layout-south">
+        <span style="font-weight: bolder">Version</span>
+        @Html.AssemblyVersion(typeof(Mvc3App.MvcApplication))
+    </div>
+    <div id="commonMessage">
+    </div>
+    <div id="cloneDialog" title="GA Cloning Selector">
+    </div>
+    <script type="text/javascript">
+        var linkObj;
+        $(function () {
+            $(".cloneLink").button();
+
+            $('#cloneDialog').dialog({
+                autoOpen: false,
+                width: 400,
+                resizable: false,
+                modal: true,
+                buttons: {
+                    "Clone": function () {
+                        $("#clone-message").html(''); //make sure there is nothing on the message before we continue                         
+                        $("#cloneGAForm").submit();
+                    },
+                    "Cancel": function () {
+                        $(this).dialog("close");
+                    }
+                }
+            });
+
+            $(".cloneLink").click(function () {
+                linkObj = $(this);
+                var dialogDiv = $('#cloneDialog');
+                var viewUrl = linkObj.attr('href');
+                $.get(viewUrl, function (data) {
+                    dialogDiv.html(data);
+                    var $form = $("#cloneGAForm");
+                    $form.unbind();
+                    $form.data("validator", null);
+                    $.validator.unobtrusive.parse(document);
+                    $form.validate($form.data("unobtrusiveValidation").options);
+                    dialogDiv.dialog('open');
+                });
+                return false;
+            });
+
+        });
+
+
+        function cloneSuccess() {
+            if ($("#clone-message").html() == "True") {
+                $('#cloneDialog').dialog('close');
+                $('#commonMessage').html("Clone Complete");
+            }
+            else {
+                $("#clone-message").show();
+            }
+        }
+    
+    </script>
+</body>
+</html>

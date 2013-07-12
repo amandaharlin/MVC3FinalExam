@@ -1,0 +1,119 @@
+﻿@model DALLib.ViewModels.CountryModel
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section MainHeaderContentPlaceHolder
+{
+    <div>
+        @Html.Partial("Header")
+    </div>
+    <div>
+        @Html.LabelFor(m => m.Country):
+        @Html.DropDownListFor(m => m.Country, Model.CountryModelList, "[ All ]") 
+    </div>
+}
+
+<div class="admin-grid-wrapper">
+    <table id="AllCustomersjqGrid">
+    </table>
+    <div id="AllCustomersjqGridPager">
+    </div>
+</div>
+
+
+<script language="javascript" type="text/javascript">
+    var $jqGrid = $('#AllCustomersjqGrid');
+    function populateGrid(filter) {
+        $jqGrid.jqGrid({
+            url: '/Home/GetCustomers?filters={"groupOp":"' + filter + '"}',
+            datatype: 'json',
+            mtype: 'POST',
+            caption: 'Customers' +  (filter.length ? " located in " + filter : ""),
+            colNames: ['Name', 'Address', 'City', 'Zip', 'State', 'Country'],
+            colModel:
+                    [
+                        {
+                            name: 'Name',
+                            index: 'Name',
+                            editable: true,
+                            editrules: { edithidden: false },
+                            key: true
+                        },
+                        {
+                            name: 'Address',
+                            index: 'Address',
+                            editable: true,
+                            editrules: { edithidden: false },
+                            key: true
+                        },
+                        {
+                            name: 'City',
+                            index: 'City',
+                            editable: true,
+                            editrules: { edithidden: false },
+                            key: true
+                        },
+                        {
+                            name: 'Zip',
+                            index: 'Zip',
+                            editable: true,
+                            editrules: { edithidden: false },
+                            key: true
+                        },
+                        {
+                            name: 'State',
+                            index: 'State',
+                            editable: true,
+                            editrules: { edithidden: false },
+                            key: true
+                        },
+                        {
+                            name: 'Country',
+                            index: 'Country',
+                            editable: true,
+                            editrules: { edithidden: false },
+                            key: true
+                        }
+
+                    ],
+            jsonReader: {
+                root: "Rows",
+                page: "Page",
+                total: "Total",
+                records: "Records",
+                repeatitems: false,
+                userdata: "UserData",
+                id: "0"
+            },
+            rowNum: 10,
+            rowList: [10, 20, 50],
+            pager: jQuery('#AllCustomersjqGridPager'),
+            sortname: 'Name',
+            sortorder: 'asc',
+            viewrecords: true,
+            multiselect: false,
+            autowidth: true,
+            //width: 600,
+            height: 'auto'
+        });
+    }
+
+
+    $(document).ready(function () {
+        populateGrid("");
+        $('#Country').on("change",function () {
+            var filter = $(this).val();
+            $jqGrid.jqGrid('setGridParam',{
+                url: '/Home/GetCustomers?filters={"groupOp":"' + filter + '"}'
+            }).trigger("reloadGrid");
+
+        });
+    });
+
+
+
+
+   
+</script>

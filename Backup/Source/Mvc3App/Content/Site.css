@@ -1,0 +1,624 @@
+body
+{
+    color: #000;
+    font-size: .75em;
+    font-family: Verdana, Helvetica, Sans-Serif;
+    margin: 0;
+    padding: 0;
+}
+
+a:link
+{
+    color: #15428B;
+    text-decoration: underline;
+}
+a:visited { color: #15428B; }
+
+p, ul
+{
+    margin-bottom: 20px;
+    line-height: 1.6em;
+}
+
+/* HEADINGS   
+----------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6 { font-family: Arial, Helvetica, sans-serif; }
+h1 { font-size: 2em; padding-bottom: 0; margin-bottom: 0; }
+h2 { font-size: 1.5em; padding: 0 0 10px 0; }
+h3 { font-size: 1.2em; }
+h4 { font-size: 1.1em; }
+h5 { font-size: 1em; }
+h6 { font-size: .9em; }
+
+/* FORM LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+fieldset { padding: 0.5em; border: 1px solid #CCC; }
+fieldset p { margin: 2px 12px 10px 10px; }
+/*fieldset label { display: block; }*/
+fieldset label.inline { display: inline; }
+
+legend {
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 2px 4px 8px 4px;
+}
+
+/*
+input[type="text"] {
+    width: 14.75em;
+    border: 1px solid #CCC;
+}
+*/
+
+select {
+    width: 15em;
+    border: 1px solid #CCC;
+}
+
+/* TABLE
+----------------------------------------------------------
+
+table 
+{
+  border: solid 1px #e8eef4;
+  border-collapse: collapse;
+}
+
+table td 
+{
+  padding: 5px;   
+  border: solid 1px #e8eef4;
+}
+
+table th
+{
+  padding: 6px 5px;
+  text-align: left;
+  background-color: #e8eef4; 
+  border: solid 1px #e8eef4;   
+}
+*/
+
+/* MISC  
+----------------------------------------------------------*/
+.clear { clear: both; }
+.error { background: none #fef1ec repeat-x 50% 50% ; color:#CD0A0A; }
+input.error, textarea.error, select.error { border: #cd0a0a 1px solid }
+.required { color:Red; }
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error { color: #f00; }
+.field-validation-valid { display: none; }
+.input-validation-error { border: 1px solid #ff0000; background-color: #ffeeee; }
+.validation-summary-errors { font-weight: bold; color: #ff0000; }
+.validation-summary-valid { display: none; }
+
+/* Styles for editor and display helpers
+----------------------------------------------------------*/
+.display-label,
+.editor-label,
+.display-field,
+.editor-field { margin: 0.5em 0; }
+
+.text-box { width: 30em; }
+.text-box.multi-line { height: 6.5em; }
+
+.tri-state { width: 6em; }
+
+
+/*---------------------------------------------------------
+   jQuery UI Overrides
+----------------------------------------------------------*/
+
+
+/* jQuery UI Widget
+----------------------------------------------------------*/
+
+.ui-widget-overlay {
+    background: url(images/ui-bg_flat_0_666666_40x100.png) #aaaaaa repeat 50% 50%;
+    filter:Alpha(Opacity=30);
+    opacity:.3
+}
+
+/* jQuery UI State
+----------------------------------------------------------*/
+
+.ui-state-error, .ui-widget-content .ui-state-error, .ui-widget-header .ui-state-error {background-image:none }
+
+.ui-state-warning, .ui-widget-content .ui-state-warning, .ui-widget-header .ui-state-warning {border: 1px solid #fad42e; background: #fbec88 url(images/ui-bg_flat_55_fbec88_40x100.png) 50% 50% repeat-x; color: #363636; }
+.ui-state-warning a, .ui-widget-content .ui-state-warning a, .ui-widget-header .ui-state-warning a { color: #363636; }
+.ui-state-warning .ui-icon, .ui-state-warning-text .ui-icon {background-image: url(jquery.ui/theme/redmond/images/ui-icons_2e83ff_256x240.png); }
+
+.ui-state-success, .ui-widget-content .ui-state-success, .ui-widget-header .ui-state-success {border: 1px solid #0acd0a; background: #f1feec url(images/ui-bg_glass_95_fef1ec_1x400.png) 50% 50% repeat-x; color: #000; }
+.ui-state-success a, .ui-widget-content .ui-state-success a, .ui-widget-header .ui-state-success a { color: #0acd0a; }
+.ui-state-success .ui-icon, .ui-state-success-text .ui-icon {background-image: url(jquery.ui/theme/redmond/images/ui-icons_217bc0_256x240.png); }
+
+
+/* jQuery UI Autocomplete
+----------------------------------------------------------*/
+
+.ui-autocomplete {
+    font-size: 80%;
+    max-height: 88px;
+    overflow-y: auto;
+}
+/* IE 6 doesn't support max-height we use height instead, but this forces the menu to always be this tall */
+* html .ui-autocomplete { height: 88px; }
+
+
+/* jQuery UI Button
+----------------------------------------------------------*/
+
+.button-bar .ui-button {
+    border: 1px solid transparent;
+    background:transparent none no-repeat 2px;
+    *background-color: #d6e3f3;
+    color:#000;
+    font-size:.8em;
+    font-weight:normal
+}
+.button-bar .ui-button:hover { background-color:#BACFE9;border-color:#79B7E7; }
+.button-bar .ui-button[disabled="disabled"]:hover { background-color:transparent;border-color:transparent; } /* IE */
+.button-bar .ui-button:disabled:hover { background-color:transparent;border-color:transparent; }
+.button-bar .ui-button .ui-button-text { padding:.1em .25em }
+.button-bar .right { float: right; }
+
+
+
+/* jQuery UI Dialog
+----------------------------------------------------------*/
+
+.progress.ui-dialog.ui-widget-content { background:transparent;border:none;padding:2em; }
+.progress .ui-dialog-titlebar { display: none; }
+.progress .ui-dialog-content.ui-widget-content {
+    background:#fff;
+    border:.25em solid #bbb;
+    font-size:1em;
+    font-weight:bold;
+    text-align:center;
+    vertical-align:middle;
+}
+.progress .ui-dialog-content.ui-widget-content img { vertical-align:middle;padding-right:1em; }
+
+
+/* jQuery UI Tabs -- IE 7 Hack!
+----------------------------------------------------------*/
+
+.ui-tabs, .ui-tabs .subtabs li { *position:static; }
+
+
+/*---------------------------------------------------------
+   jQuery Plugins Overrides
+----------------------------------------------------------*/
+
+
+/* Layout Manager
+----------------------------------------------------------*/
+
+.ui-layout-pane { 
+    background: #fff; 
+    border: 1px solid #99BBE8; 
+    padding: 10px; 
+    overflow: auto;
+} 
+
+.ui-layout-resizer { background: #DFE8F6;  } 
+
+.ui-layout-toggler { background-repeat: no-repeat; background-position: center; background-color: transparent }
+.ui-layout-toggler-east { background-image: url('../Content/Images/toggle-e.gif'); } 
+.ui-layout-toggler-east-closed { background-image: url('../Content/Images/toggle-w.gif'); } 
+.ui-layout-toggler-north { background-image: url('../Content/Images/toggle-n.gif'); }
+.ui-layout-toggler-north-closed { background-image: url('../Content/Images/toggle-s.gif'); }
+.ui-layout-toggler-south { background-image: url('../Content/Images/toggle-s.gif'); }
+.ui-layout-toggler-south-closed { background-image: url('../Content/Images/toggle-n.gif'); }
+.ui-layout-toggler-west { background-image: url('../Content/Images/toggle-w.gif'); }
+.ui-layout-toggler-west-closed { background-image: url('../Content/Images/toggle-e.gif'); }
+
+.ui-layout-pane-north, .ui-layout-pane-west, .ui-layout-pane-east, .ui-layout-center { padding:0 !important; }
+.ui-layout-pane-south {
+    background:#DFE8F6;
+    color:#88f;
+    font-size:75%;
+    padding:.125em 1em !important;
+    text-align: right;
+}
+
+#outer-layout > .ui-layout-pane-north,
+#outer-layout > .ui-layout-pane-south,
+#inner-layout > .ui-layout-pane-center,
+#inner-layout > .ui-layout-pane-north { border:none !important; }
+
+.resizer-west-dragging,
+.resizer-west-open:hover { background-color:#f00 !important; } 
+
+* HTML .resizer-west-open { background-color:#f00; } 
+
+.resizer-east-dragging,
+.resizer-east-open:hover { background-color:#f00 !important; } 
+
+* HTML .resizer-east-open { background-color:#f00; } 
+
+.header {
+    background-image:url('../Content/Images/toolbar/bg.gif');
+    border-bottom: 1px solid #99BBE8; 
+    color:#15428B;
+    padding:0.5em;
+}
+
+.header-content  { padding:0em; }
+
+.header.button-bar { padding:0.125em; }
+
+.header.identification { font-size: 85%; }
+
+/* Layout Manager
+----------------------------------------------------------*/
+
+/*
+.ui-multiselect.ui-widget.ui-state-default {
+    background-color: #ffffff;
+    background-image: none;
+}
+*/
+
+/*---------------------------------------------------------
+   QTip Settings
+----------------------------------------------------------*/
+
+div.ui-tooltip-wrapper div.ui-tooltip-content.ui-widget-content {
+    background-color: #FBF7AA;
+    background-image: none;
+    border: none;
+    color: #A27D35;
+}
+
+div.tt { display: inline-block; *display: inline; }
+
+/*---------------------------------------------------------
+   GPlat Settings
+----------------------------------------------------------*/
+
+
+/* Feedback Panel
+----------------------------------------------------------*/
+
+ul.message-list { margin:0;padding:0 }
+
+ul.message-list > li {
+    list-style-type: none;
+    padding: 0.5em;
+    margin: 0.25em;
+}
+
+ul.message-list > li ul { margin-bottom:0; }
+
+/* Menu
+----------------------------------------------------------*/
+
+#menu .ui-collapsible-title, #menu .ui-collapsible-content { border-top:0;font-size:0.9em;padding:0.25em; }
+#menu .ui-collapsible-title .ui-icon { margin-top:-.125em; }
+#menu .ui-collapsible-content ul { font-size:0.9em;margin:0;padding:0; }
+#menu .ui-collapsible-content ul li { list-style-type:none;margin-left: 0.5em; }
+#menu .ui-collapsible .ui-collapsible-title.ui-state-default,
+#menu .ui-collapsible .ui-widget-content { border-left:0;border-right:0; }
+#menu ul li a { color:#15428B;text-decoration:none; }
+#menu ul li a:hover { text-decoration:underline; }
+#menu ul li.list-title { background-color:#E9F4FD;font-weight:bold;border:1px solid #D0E8FB;border-width:1px 0 }
+
+/* Page Header
+----------------------------------------------------------*/
+
+.page-header
+{
+    display: block;
+    float: left;    
+    background-image: url('/Content/Images/headerBg.gif');   
+    background-repeat: repeat-x;
+    margin: 0px;    
+    width: 100%;    
+}
+
+.page-header a { text-decoration: none; }
+.page-header a:hover { text-decoration: underline; }
+
+.page-header img { border:0; }
+.page-header .chk-logo { float: left; }
+
+.page-header .title 
+{     
+    float: left;
+    font-size: 14pt;
+    margin: .6em 0 0 .5em;
+    vertical-align:middle;
+}
+
+.page-header .links
+{
+    float: right;
+    margin: 1em 0 0 .5em;
+    right: 0px;
+    top: 0px;
+ }
+.page-header .links * { vertical-align:middle; }
+.page-header .links a { font-size:80%; padding-right:2em; }
+.page-header .links img { padding-right:.25em;padding-bottom:0.25em }
+
+
+/* ReadOnly
+----------------------------------------------------------*/
+.readOnly { background-color:#F2F2F2; color: #000; }
+.ro-ignore[readonly], .ro-ignore[disabled] { background-color:#F2F2F2; color: #000; }
+textarea.readOnly, textarea.ro-ignore { border-color:#ccc; }
+
+/*
+.readOnly  { border-style:none; background-color:#fff; }
+
+select.readOnly  { border-style:none; }
+
+input[type="text"].readOnly { border-style:none; }
+*/
+
+/* Button Bar
+----------------------------------------------------------*/
+
+.button-bar table { border-style:none; width:100%; }
+.button-bar table td { border-style:none;padding:0 }
+.button-bar table td button { margin:0 0.25em }
+.button-bar table td.second { text-align:right; }
+
+/* GPlat Grid Table
+----------------------------------------------------------*/
+
+table.grid { background-color:#fff; border-collapse:collapse; border:1px solid #A8A7BF; width:100%; }
+table.grid th, table.grid td { border:1px solid #E2E2E2; }
+table.grid th { background-color:#F0F8FF;color:#2F4F4F;padding: 0.25em;text-align:left; }
+table.grid .alt { background-color:#F9F9F9; }
+table.grid td { padding: 0.25em; }
+
+/* sortable grid
+------------------------------------------------------------*/
+table.grid .dragging { background-color:#6793F3; }
+table.grid td.dragHandle {}
+table.grid td.showDragHandle
+{
+    background-image: url('http://localhost:15327/Content/Images/updown.gif');
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: move;
+}
+
+
+/* GPlat Expandable Table
+----------------------------------------------------------*/
+table.expandable tr td { padding-left: 36px; }
+table.expandable tr td.empty,
+table.expandable tr td.collapsed,
+table.expandable tr td.expanded { padding-left: 18px; background:transparent no-repeat 4px center; }
+table.expandable tr td.collapsed { background-image: url('/Content/Images/Plus.gif'); }
+table.expandable tr td.expanded { background-image: url('/Content/Images/Minus.gif'); }
+
+
+/* Tekerik Month Table and Header*/
+table.rsContentTable, table.rsHorizontalHeaderTable { width: 100% }
+
+
+/* GPlat Header
+----------------------------------------------------------*/
+
+#tblGPlatHeader
+{	
+    border-style:none;
+    /*font-size:1.1em;*/
+    /*background-color: #ddd;*/
+    width:100%;
+}
+
+#tblGPlatHeader td
+{	
+    border-style:none;
+    white-space:nowrap; 
+    vertical-align:top;
+}
+
+#tblGPlatHeader .field
+{
+    font-weight:bold;
+    color:Black;
+}
+
+#tblGPlatHeader .small
+{
+    font-size:.80em;
+    font-weight:normal;
+    vertical-align:bottom;
+}
+
+#tblGPlatTopIcons
+{
+    border-style:none;
+    width:100%;
+}
+
+#tblGPlatTopIcons td
+{
+    text-align:right;
+    border-style:none;
+}
+
+.form-field-table, .form-field-table td
+{
+   border-style:none;
+}
+
+/* FB 3725 - Requested the removal of this style... can be deleted
+#tlbWellHeaderRightCol
+{
+    background-color:#F0F4FF;
+    border: 1px solid #E9F4FD;
+}*/
+
+#tlbWellHeaderRightCol td
+{
+    padding:.25em;
+}
+
+.subtabs
+{    
+    background:#D6E3F2;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+}
+
+.noneditable
+{
+    background:#efefef;
+}
+
+.calloutError
+{
+    background-color: #fdd;
+    border-color: #c33;
+    color: #930000;
+}
+
+.calloutError.readonly, input.calloutError.readonly
+{
+    background-color: #fdd;
+    border-color: #c77;
+}
+
+.deleted, .deleted input, .deleted select, .deleted textarea
+ {
+     font-style: italic;
+     text-decoration: line-through;
+ }
+
+/**************************************************/
+/* Version							  */
+/*************************************************
+.version { font-weight: bolder; }
+*/
+
+.sectionGrid a:link,
+.sectionGrid a:hover,
+.sectionGrid a:visited
+{
+    text-decoration: none;
+}
+
+/**************************************************/
+/* Admin stuff                                    */
+/**************************************************/
+.admin-grid-wrapper { padding: 1em; }
+
+/**************************************************/
+/* Links / Reports                                */
+/**************************************************/
+.links-list
+{
+    list-style: none;
+}
+.links-list li 
+{
+    padding-bottom: 1em;
+}
+.links-list span
+{
+    color: Silver;
+    display: block;
+    padding-left: 3em;
+    padding-top: 0.5em;
+}
+
+/***************************************************/
+/* Filter groupings                                */
+/***************************************************/
+
+.filter-group label
+{
+    font-size: 85%;
+}
+
+/***************************************************/
+/* Calendar Detail Dialog Popup                    */
+/***************************************************/
+.dialog-field 
+{
+    padding-bottom: 0.5em;
+}
+
+.dialog-label
+{
+    font-weight: bold;
+    padding-bottom: 0.5em;
+    width: 15em;
+}
+
+.dialog-data
+{
+    padding-left: 3em;
+    width: 45em;
+}
+
+/**************************************************/
+/* Employee Management / My Training
+/**************************************************/
+.employee-name-header { padding: 0.5em; }
+.employee-name-header .name { font-size: 1.25em; float: left; padding-top: 0.4em; }
+.employee-name-header .save-button { float: right; }
+.employee-name-header #lastUpdate { font-size: 0.75em; font-style: italic; padding-right: 0.5em; }
+
+.emp-management { padding: 0.5em; }
+.emp-management div { display: inline-block; padding-right: 0.5em; }
+
+#employeeInformation { background-color: #f7f7f7; padding: 0.5em; margin: 0.5em; }
+#employeeInformation img { float: left; padding: 0 0.5em 0.5em 0; }
+#employeeInformation .column { float: left; width: 35em; }
+#employeeInformation .column .field { padding-bottom: 0.5em; }
+#employeeInformation .column .spacer { padding-bottom: 0.5em; height: 0.75em; }
+.field-label, .employeeInformation .column .field label { color: #666666; display: inline-block; width: 10.5em; }
+.field-value { display: inline-block; font-weight: bold; }
+#employeeInformation .supervisors { clear: both; float: left; }
+#employeeInformation .supervisors .field-label { width: auto; margin-right: 0.5em; vertical-align: middle; }
+#employeeInformation .supervisors .field-value { vertical-align: middle; }
+#employeeInformation .supervisors .ui-icon { display: inline-block; margin: 0 0.25em 0 0.25em; vertical-align: middle; }
+
+.section-name { text-transform: uppercase; }
+.section-status { float: right; font-style: italic; }
+.section-no-results { font-style: italic; }
+.nautilus-message { margin-bottom: 0.5em; padding: 0.5em 0 0.5em 0; text-align: center; }
+
+#employeeDetailForm #tabs ul li { font-size: 85%; }
+
+#ui-datepicker-div.monthonly .ui-datepicker-calendar { display: none; }
+
+.ui-dialog { width: 600px; }
+
+/* TABLE
+----------------------------------------------------------*/
+
+table 
+{
+  border: solid 1px #e8eef4;
+  border-collapse: collapse;
+}
+
+table td 
+{
+  padding: 5px;   
+}
+
+table th
+{
+  padding: 6px 5px;
+  text-align: left;
+  background-color: #e8eed0; 
+}
+
+table .even 
+{
+    background-color: #e8eef4;
+}

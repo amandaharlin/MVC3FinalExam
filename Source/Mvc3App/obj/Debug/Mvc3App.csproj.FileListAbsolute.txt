@@ -1,0 +1,49 @@
+C:\VSS_2010\MVC3_PopupDialog_Solution\Source\Mvc3App\obj\Debug\ResolveAssemblyReference.cache
+C:\VSS_2010\MVC3_PopupDialog_Solution\Source\Mvc3App\bin\Mvc3App.dll
+C:\VSS_2010\MVC3_PopupDialog_Solution\Source\Mvc3App\bin\Mvc3App.pdb
+C:\VSS_2010\MVC3_PopupDialog_Solution\Source\Mvc3App\obj\Debug\Mvc3App.dll
+C:\VSS_2010\MVC3_PopupDialog_Solution\Source\Mvc3App\obj\Debug\Mvc3App.pdb
+C:\VSS_2010\MVC3_SAMPLE_Solution\Source\Mvc3App\bin\Mvc3App.dll
+C:\VSS_2010\MVC3_SAMPLE_Solution\Source\Mvc3App\bin\Mvc3App.pdb
+C:\VSS_2010\MVC3_SAMPLE_Solution\Source\Mvc3App\obj\Debug\ResolveAssemblyReference.cache
+C:\VSS_2010\MVC3_SAMPLE_Solution\Source\Mvc3App\obj\Debug\Mvc3App.dll
+C:\VSS_2010\MVC3_SAMPLE_Solution\Source\Mvc3App\obj\Debug\Mvc3App.pdb
+C:\VSS_2010_Selected\MVC3_SAMPLE_OSU_Solution\Source\Mvc3App\bin\Mvc3App.dll
+C:\VSS_2010_Selected\MVC3_SAMPLE_OSU_Solution\Source\Mvc3App\bin\Mvc3App.pdb
+C:\VSS_2010_Selected\MVC3_SAMPLE_OSU_Solution\Source\Mvc3App\obj\Debug\ResolveAssemblyReference.cache
+C:\VSS_2010_Selected\MVC3_SAMPLE_OSU_Solution\Source\Mvc3App\obj\Debug\Mvc3App.dll
+C:\VSS_2010_Selected\MVC3_SAMPLE_OSU_Solution\Source\Mvc3App\obj\Debug\Mvc3App.pdb
+F:\OSU_2_16_12\MVC3_SAMPLE_OSU_Solution\Source\Mvc3App\obj\Debug\ResolveAssemblyReference.cache
+F:\OSU_2_16_12\MVC3_SAMPLE_OSU_Solution\Source\Mvc3App\obj\Debug\Mvc3App.dll
+F:\OSU_2_16_12\MVC3_SAMPLE_OSU_Solution\Source\Mvc3App\obj\Debug\Mvc3App.pdb
+F:\OSU_2_16_12\MVC3_SAMPLE_OSU_Solution\Source\Mvc3App\bin\Mvc3App.dll
+F:\OSU_2_16_12\MVC3_SAMPLE_OSU_Solution\Source\Mvc3App\bin\Mvc3App.pdb
+C:\Users\Manums\Desktop\MVC3_SAMPLE_OSU_Solution\Source\Mvc3App\bin\Mvc3App.dll
+C:\Users\Manums\Desktop\MVC3_SAMPLE_OSU_Solution\Source\Mvc3App\bin\Mvc3App.pdb
+C:\Users\Manums\Desktop\MVC3_SAMPLE_OSU_Solution\Source\Mvc3App\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Manums\Desktop\MVC3_SAMPLE_OSU_Solution\Source\Mvc3App\obj\Debug\Mvc3App.dll
+C:\Users\Manums\Desktop\MVC3_SAMPLE_OSU_Solution\Source\Mvc3App\obj\Debug\Mvc3App.pdb
+C:\Users\Manums\Desktop\MVC3_CityDDL_OSU_Solution\Source\Mvc3App\bin\Mvc3App.dll
+C:\Users\Manums\Desktop\MVC3_CityDDL_OSU_Solution\Source\Mvc3App\bin\Mvc3App.pdb
+C:\Users\Manums\Desktop\MVC3_CityDDL_OSU_Solution\Source\Mvc3App\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Manums\Desktop\MVC3_CityDDL_OSU_Solution\Source\Mvc3App\obj\Debug\Mvc3App.dll
+C:\Users\Manums\Desktop\MVC3_CityDDL_OSU_Solution\Source\Mvc3App\obj\Debug\Mvc3App.pdb
+C:\Users\Manums\Desktop\MVC3_CityDDL_OSU_Solution\Source\Mvc3App\bin\DALLib.dll
+C:\Users\Manums\Desktop\MVC3_CityDDL_OSU_Solution\Source\Mvc3App\bin\MvcContrib.dll
+C:\Users\Manums\Desktop\MVC3_CityDDL_OSU_Solution\Source\Mvc3App\bin\DALLib.pdb
+C:\Users\DevTopia\Desktop\code-off 2012\MVC3_CityDDL_OSU_Solution\Source\Mvc3App\bin\Mvc3App.dll
+C:\Users\DevTopia\Desktop\code-off 2012\MVC3_CityDDL_OSU_Solution\Source\Mvc3App\bin\Mvc3App.pdb
+C:\Users\DevTopia\Desktop\code-off 2012\MVC3_CityDDL_OSU_Solution\Source\Mvc3App\bin\DALLib.dll
+C:\Users\DevTopia\Desktop\code-off 2012\MVC3_CityDDL_OSU_Solution\Source\Mvc3App\bin\DALLib.pdb
+C:\Users\DevTopia\Desktop\code-off 2012\MVC3_CityDDL_OSU_Solution\Source\Mvc3App\obj\Debug\Mvc3App.csprojResolveAssemblyReference.cache
+C:\Users\DevTopia\Desktop\code-off 2012\MVC3_CityDDL_OSU_Solution\Source\Mvc3App\obj\Debug\Mvc3App.dll
+C:\Users\DevTopia\Desktop\code-off 2012\MVC3_CityDDL_OSU_Solution\Source\Mvc3App\obj\Debug\Mvc3App.pdb
+C:\Users\DevTopia\Desktop\code-off 2012\MVC3_CityDDL_OSU_Solution\Source\Mvc3App\bin\MvcContrib.dll
+D:\Users\Amanda Harlin\Desktop\MVC3_CityDDL_OSU_Solution\Source\Mvc3App\bin\Mvc3App.dll
+D:\Users\Amanda Harlin\Desktop\MVC3_CityDDL_OSU_Solution\Source\Mvc3App\bin\Mvc3App.pdb
+D:\Users\Amanda Harlin\Desktop\MVC3_CityDDL_OSU_Solution\Source\Mvc3App\bin\DALLib.dll
+D:\Users\Amanda Harlin\Desktop\MVC3_CityDDL_OSU_Solution\Source\Mvc3App\bin\MvcContrib.dll
+D:\Users\Amanda Harlin\Desktop\MVC3_CityDDL_OSU_Solution\Source\Mvc3App\bin\DALLib.pdb
+D:\Users\Amanda Harlin\Desktop\MVC3_CityDDL_OSU_Solution\Source\Mvc3App\obj\Debug\Mvc3App.csprojResolveAssemblyReference.cache
+D:\Users\Amanda Harlin\Desktop\MVC3_CityDDL_OSU_Solution\Source\Mvc3App\obj\Debug\Mvc3App.dll
+D:\Users\Amanda Harlin\Desktop\MVC3_CityDDL_OSU_Solution\Source\Mvc3App\obj\Debug\Mvc3App.pdb
